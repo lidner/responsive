@@ -65,6 +65,14 @@ body {
 	font-weight: 400;
 }
 
+.button {
+	border: 1px solid #fff;
+	font-size: 18px;
+	line-height: 21px;
+	padding: 20px 45px;
+	text-transform: uppercase;
+}
+
 .header {
 	background-image: url('../images/header-bg.jpg');
 	background-position: center;
@@ -260,14 +268,6 @@ body {
 	display: block;
 }
 
-.about__content .button {
-	border: 1px solid #fff;
-	font-size: 18px;
-	line-height: 21px;
-	padding: 20px 45px;
-	text-transform: uppercase;
-}
-
 /* How to */
 .how-to {
 	background: url('../images/how-to-bg.jpg');
@@ -336,4 +336,72 @@ foreignObject {
 .to-book__text + .to-book__text {
 	margin-right: 0;
 	margin-left: 0;
+}
+
+/* Info */
+.info {
+	background: url('../images/info-bg.jpg');
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	padding-bottom: 100px;
+	min-height: 100vh;
+}
+
+.special-offer__inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.special-offer__item {
+	width: 500px;
+}
+
+.special-offer__item-box {
+	border: 1px solid #fff;
+	margin-bottom: 25px;
+	padding: 40px 75px;
+	text-align: center;
+	min-height: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.special-offer__item-text {
+	width: 236px;
+	font-size: 24px;
+	line-height: 29px;
+	margin: 0 auto;
+}
+
+.special-offer__item-text span {
+	color: #cb0e0e;
+}
+
+.special-offer__old-price {
+	text-align: right;
+	font-size: 14px;
+	line-height: 17px;
+	margin-bottom: 16px;
+	position: relative;
+}
+
+.special-offer__old-price::before {
+	content: '';
+	position: absolute;
+	width: 68px;
+	height: 1px;
+	background: #cb0e0e;
+	top: 7px;
+	transform: rotate(15deg);
+}
+
+.special-offer__new-price {
+	font-size: 48px;
+	line-height: 57px;
+}
+
+.special-offer__btn {
+	width: 100%;
 }
